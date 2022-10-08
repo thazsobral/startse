@@ -7,18 +7,41 @@
     <title id="page-title">Document</title>
 </head>
 <body id="my-page">
+    <ul>
+        <li>maça</li>
+        <li>bananas</li>
+    </ul>
     <script>
+        function clearElement(element) {
+            element.innerHTML = "";
+        }   
+
+        function createElement(elementName, innerText) {
+            let element = document.createElement(elementName);
+            if(innerText) {
+                element.innerText = innerText;
+            }
+
+            return element;
+        }
+
+        function extractHTML(element) {
+            return element.innerHTML;
+        }
+
         let dom = document;
 
         let body = document.getElementById("my-page");
         
-        console.log(typeof dom)
-        // dom.forEach(element => {
-        //     let p = document.createElement("p");
-        //     p.innerHTML = element;
-        //     body.appendChild(p);
-        // });
-        
+        clearElement(body);
+
+        if(dom.childNodes.length > 0) {
+            for (const iterator of dom.childNodes) {
+                let html = extractHTML(iterator)
+                let p = createElement("p", html)
+                body.appendChild(p);
+            } 
+        }
     </script>
 </body>
 </html>
