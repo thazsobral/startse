@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Meta Script Tag</title>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("btnAlterar").addEventListener("click", function() {
+                let atualTexto = document.getElementById("atualTexto");
+                let novoTexto = document.getElementById("novoTexto");
+                atualTexto.innerHTML = novoTexto.value;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Minha página com funções meta</h1>
+    <p id="atualTexto">Isso é um parágrafo</p>
+    <textarea name="novoTexto" id="novoTexto" cols="30" rows="10"></textarea>
+    <button id="btnAlterar">Alterar parágrafo</button>
+</body>
+</html>
