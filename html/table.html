@@ -6,22 +6,68 @@
     <style>
         table {
             width: 100%;
+            height: auto;
             border-collapse: collapse;
-            border: 2px solid blue;
+            /* border-collapse: separate; */
+            /* border-spacing: 5px 10px; */
+            empty-cells: hide;
         }
 
-        tr, td, th {
-            border: 2px solid blue;
+        table, tr, td, th {
+            border: 1px solid gray;
+        }
+
+        thead {
+            text-align: left;
+            color: white;
+            background-color: darkgray;
+            font-size: 12pt;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        tbody {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        tfoot {
+            color: lightgray;
+        }
+
+        caption {
+            caption-side: bottom;
+            color: lightgray;
+            font-size: 8pt;
+            text-align: center;
+        }
+
+        #endereco {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            /* para todos os elementos de indice par */
+            background-color: lightblue;
+        }
+
+        tbody tr:nth-child(odd) {
+            /* para todos os elementos de indice impar */
+            background-color: lightseagreen;
+        }
+
+        tbody tr:hover {
+            background-color: yellowgreen;
         }
     </style>
 </head>
 <body>
     <table border>
+        <caption>Tabela 1. Relação de clientes da ABC Company</caption>
         <thead>
             <tr>
                 <th rowspan="2">Nome</th>
                 <th rowspan="2">Telefone</th>
-                <th colspan="5">Endereço</td>
+                <th id="endereco" colspan="5">Endereço</td>
             </tr>
             <tr>
                 <th>Rua</th>
@@ -32,6 +78,51 @@
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>Thalles Sobral</td>
+                <td>+55 19 99999-9999</td>
+                <td>Rua Quaquist</td>
+                <td>235</td>
+                <td>Vila Marina</td>
+                <td>Pirassununga</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Rua Quaquist</td>
+                <td>235</td>
+                <td>Vila Marina</td>
+                <td>Pirassununga</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>Thalles Sobral</td>
+                <td>+55 19 99999-9999</td>
+                <td>Rua Quaquist</td>
+                <td>235</td>
+                <td>Vila Marina</td>
+                <td>Pirassununga</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>Thalles Sobral</td>
+                <td>+55 19 99999-9999</td>
+                <td>Rua Quaquist</td>
+                <td>235</td>
+                <td>Vila Marina</td>
+                <td>Pirassununga</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>Thalles Sobral</td>
+                <td>+55 19 99999-9999</td>
+                <td>Rua Quaquist</td>
+                <td>235</td>
+                <td>Vila Marina</td>
+                <td>Pirassununga</td>
+                <td>SP</td>
+            </tr>
             <tr>
                 <td>Thalles Sobral</td>
                 <td>+55 19 99999-9999</td>
