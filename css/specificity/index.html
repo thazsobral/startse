@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Specificity</title>
+
+    <style>
+        #my-id {
+            color: blue;
+        }
+
+        .my-class::first-letter {
+            color: green;
+        }
+
+        .my-class {
+            color: gray;
+        }
+
+        p {
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title">
+            Specificity Page
+        </h1>
+        <p id="my-id" class="my-class">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus mollitia quia quaerat in odit tempora laborum minus sed illo iusto consequuntur id, numquam laudantium recusandae repellat eveniet, cupiditate velit.
+        </p>
+        <p class="my-class" style="color: purple">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim rerum excepturi? Ad aliquam error praesentium recusandae! Provident, dolore. Laborum, recusandae eos! Modi aliquid dicta nemo accusamus exercitationem corporis sed.
+        </p>
+    </div>
+</body>
+</html>
