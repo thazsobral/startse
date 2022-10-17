@@ -3,3 +3,15 @@
     padding: 0;
     border: 0;
 }
+
+#first-div p {
+    background-color: aquamarine;
+}
+
+#first-div > p {
+    font-weight: bold;
+}
+
+#first-div > * {
+    background-color: bisque;
+}
