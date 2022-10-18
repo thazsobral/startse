@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 500px;
+}
+
+p {
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+    border: 50px solid goldenrod;
+    background-color: blueviolet;
+}
