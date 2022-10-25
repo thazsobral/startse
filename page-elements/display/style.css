@@ -1,0 +1,27 @@
+p {
+    border: 1px solid red;
+    background-color: pink;
+    margin: 10px;
+}
+
+p.a{
+    display: none;
+}
+
+p.b{
+    visibility: hidden;
+}
+
+p.c{
+    display: inline;
+    width: 200px;
+}
+
+p.d{
+    display: block;  /*comportamento padrão*/
+}
+
+p.e{
+    display: inline-block;
+    width: 200px;
+}
