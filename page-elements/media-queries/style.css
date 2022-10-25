@@ -1,0 +1,25 @@
+@charset "charset";
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css);
+
+body {
+    background-color: rgb(224, 117, 117);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: rgb(238, 238, 155);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: rgb(121, 233, 121);
+    }
+}
