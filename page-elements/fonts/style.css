@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+h1 {
+  font-family: Roboto;
+  font-stretch: narrower;
+  font-weight: 900;
+  font-size: 3em;
+  color: rgb(90, 50, 230);
+  font-variant: small-caps;
+}
+
+.texto {
+  color: #444;
+  font-family: verdana, sans-serif;
+  font-style: italic;
+}
