@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    background-color: aquamarine;
+}
+
+.black-box {
+    position: relative;
+    z-index: 6;
+    border: 2px solid black;
+    background-color: white;
+    height: 100px;
+    margin: 30px;
+}
+
+.gray-box {
+    position: absolute;
+    z-index: 3;
+    /* gray box will be above both green and black box */
+    background: lightgray;
+    height: 60px;
+    width: 70%;
+    left: 50px;
+    top: 50px;
+}
+
+.green-box {
+    position: absolute;
+    z-index: 5;
+    /* green box will be above black box */
+    background: lightgreen;
+    width: 35%;
+    left: 270px;
+    top: -15px;
+    height: 100px;
+}
+
+#menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: darkgray;
+    color: white;
+    padding: 10px;
+    border: 0;
+    z-index: 10;
+}
+
+#caixa {
+    position: relative;
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid red;
+    /* height: 1000px; */
+}
