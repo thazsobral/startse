@@ -1,0 +1,14 @@
+img {
+    float: right;
+    margin: 5px 20px;
+    height: 200px;
+}
+
+p {
+    border: 1px solid blue;
+}
+
+.clear {
+    clear: right;
+    background: red;
+}
