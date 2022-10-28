@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interest Research Form</title>
+</head>
+<body>
+    <nav>
+        <header>QStart</header>
+        <section classecundarys="nav-items">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#form">Formulário</a>
+        </section>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="column-left">
+                <h1>Você faz parte de uma comunidade incrível?</h1>
+                <p>Então compartilha com a gente mais sobre sua cultura.</p>
+                <a href="" id="CTA-button">Compartilhe agora!</a>
+            </div>
+            <picture class="column-right">
+                <img src="./images/91651-hamster-loader.gif" alt="illustration" id="home-image">
+            </picture>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>O que é <u>QStart</u>?</h2>
+        <p><b>QStart</b> é um movimento de pesquisa <b>(Q)</b> para começar <b>(Start)</b> a conhecer os interesses das diversas comunidades formadas nos dias atuais.</p>
+        <ul>
+            <li>se você têm interesse em compartilhar seus interesses;</li>
+            <li>criar e participar de comunidades e;</li>
+            <li>também receber notícias personalizadas.</li>
+        </ul>
+        <p>Não hexite em preencher nosso <a href="#form">formulário</a> abaixo e assim, não ficar de fora desse incrível movimento.</p>
+        <h5>Isso vai ser ÉPICO!!</h5>
+        <p>Junte-se a nós e vêm conectar mais as incontáveis comunidades existentes.</p>
+    </section>
+
+    <form id="form" action="http://google.com">
+        <section>
+            <h2>Nos conte um pouco sobre você e sua comunidade</h2>
+            <fieldset>
+                <label for="user-name">Digite seu nome:</label>
+                <input type="text" name="user-name" id="user-name" size="40" maxlength="40" placeholder="Seu nome completo">
+                <label for="user-job">Digite sua profissão:</label>
+                <input type="text" id="user-job" name="user-job" size="40" maxlength="40" placeholder="Sua profissão">
+                <label for="user-comment">Nos conte um pouco mais: </label>
+                <textarea id="user-comment" name="user-comment" cols="30" rows="4" placeholder="Conte um pouco sobre você e/ou sua comunidade ..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Você faz exercícios regularmente?</label>
+                <label> Sim
+                    <input type="radio" name="exercise" value="yes">
+                </label>
+                <label>
+                    Não
+                    <input type="radio" name="exercise" value="no"> 
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Por onde você lê seus tópicos favoritos?</legend>
+                <label for="">
+                    Livros
+                    <input type="checkbox" name="books">
+                </label>
+                
+                <label for="">
+                    Sites
+                    <input type="checkbox" name="web">
+                </label>
+                <label for="">
+                    Aplicativos
+                    <input type="checkbox" name="apps">
+                </label>
+                <label for="">
+                    Revistas
+                    <input type="checkbox" name="magazines">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Qual genêro de filme você mais gosta?</legend>
+                <select name="movie-pref">
+                    <option></option>
+                    <option value="1">Comédia</option>
+                    <option value="2">Romance</option>
+                    <option value="3">Drama</option>
+                    <option value="4">Terror</option>
+                    <option value="5">Ação</option>
+                </select>
+            </fieldset>
+            <input type="submit" value="ENVIAR">
+        </section>
+    </form>
+</body>
+</html>
