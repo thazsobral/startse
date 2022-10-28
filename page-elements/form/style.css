@@ -1,0 +1,54 @@
+form > div, fieldset {
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+form {
+    width: 750px;
+}
+
+h1 {
+    text-shadow: 0px 0px 5px #AAA
+}
+
+fieldset {
+    padding-left: 0;
+    background-color: #EEE;
+    border: 1px solid #AAA;
+}
+
+textarea {
+    vertical-align: text-top;
+}
+
+legend {
+    color: #0000CC;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+
+textarea {
+    vertical-align: text-top;
+    width: 500px;
+    height: 150px;
+}
+
+input[type=text], input[type=mail], select {
+    width: 500px;
+} 
+
+.registration label{
+    width: 300px;
+    text-align: left;
+}
+
+.required {
+    color: #AA0000
+}
