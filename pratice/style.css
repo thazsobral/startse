@@ -70,19 +70,31 @@ input, select, textarea {
 }
 
 fieldset {
-    /* border: none; */
+    border: none;
     display: inline-block;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 form fieldset label {
     margin: 10px;
     display: flex;
-    
-    /* justify-content: center;
-    justify-items: center;
-    align-items: center; */
+}
+
+form > section > fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form > section > fieldset > label {
+    margin-right: 45%;
+}
+
+form > section > fieldset > label > input {
+    width: auto;
+    margin-left: 1vw;
 }
 
 select[name="movie-pref"] {
