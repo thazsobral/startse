@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="check" id="check" onchange="toggle(this)"> <br>
+    <textarea name="compare-area" id="compare-area" cols="30" rows="10" placeholder="Digite a expressão de comparação. Ex.: 1 == 2"></textarea> <button onclick="constructCompare()">Compare</button>
+    <script>
+        function toggle(status) {
+            if(status.checked === true) {
+                alert("Ligado!");
+            } else if(status.checked !== true) {
+                alert("Desligado!");
+            } else {
+                console.log("Status desconhecido.")
+            }
+        }
+
+        function constructCompare() {
+            let text = document.getElementById("compare-area").value;
+            let tagScript = document.createElement("script");
+            tagScript.innerText = `${text}? alert("É verdade") : alert("Não é verdade"); `
+            document.body.appendChild(tagScript);
+        }
+    </script>
+</body>
+</html>

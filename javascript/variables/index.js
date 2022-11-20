@@ -7,6 +7,5 @@ try {
     x = 2;
     console.log(x);
 } catch(error) {
-    console.log('h1')
-    alert(error);
+    console.error(error);
 }
