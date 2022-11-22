@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="principal-input" type="text" placeholder="palavra principal">
+    <button onclick="insertWordAtBeginning()">Inserir no inicio</button>
+    <button onclick="insertWordAtEnd()">Inserir no final</button>
+    <button onclick="removeWordFromBeginning()">Retirar do inicio</button>
+    <button onclick="removeWordFromEnd()">Retirar do final</button>
+    
+
+    <input id="auxiliar-input" type="text" placeholder="palavra auxiliar">
+    <button onclick="replaceWord()">Substituir</button>
+    <p id="white-board"></p>
+    <script>
+        function insertWordAtBeginning() {
+            let words = document.getElementById("principal-input").value;
+            let board = document.getElementById("white-board");
+            let boardWords = board.innerText.split(" ");
+            boardWords.unshift(words);
+            let boardResult = boardWords.join(" ");
+            board.innerText = boardResult;
+        }
+
+        function insertWordAtEnd() {
+            let words = document.getElementById("principal-input").value;
+            let board = document.getElementById("white-board");
+            let boardWords = board.innerText.split(" ");
+            boardWords.push(words);
+            let boardResult = boardWords.join(" ");
+            board.innerText = boardResult;
+        }
+
+        function replaceWord() {bbbb
+            let words = document.getElementById("principal-input").value;
+            let newWords = document.getElementById("auxiliar-input").value;
+            let board = document.getElementById("white-board");
+            let boardResult = board.innerText.replace(words, newWords);
+            board.innerText = boardResult;
+        }
+
+        function removeWordFromBeginning() {
+            let board = document.getElementById("white-board");
+            let words = board.innerText.split(" ");
+            words.shift();
+            board.innerText = words.join(" ");
+        }
+
+        function removeWordFromEnd() {
+            let board = document.getElementById("white-board");
+            let words = board.innerText.split(" ");
+            words.pop();
+            board.innerText = words.join(" ");
+        }
+    </script>
+</body>
+</html>
