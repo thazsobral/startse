@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        #container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <input id="width" type="number" placeholder="largura">
+    <input id="height" type="number" placeholder="altura">
+    <button onclick="insertDiv()">Inserir</button>
+    <div id="container"></div>
+    <script>
+        function insertDiv() {
+            let colors = ["blue", "red", "yellow"];
+            let height = document.getElementById("height").value;
+            let width = document.getElementById("width").value;
+            let board = document.getElementById("container");
+            let newDiv = `<div style="background-color: ${colors[Math.floor(Math.random()*colors.length)]}; width:${width}px; height:${height}px; display: block"></>`;
+            board.innerHTML += newDiv;
+        }
+    </script>
+</body>
+</html>
