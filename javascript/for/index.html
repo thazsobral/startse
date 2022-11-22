@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="count-words" type="number" placeholder="quantidade de palavras">
+    <button onclick="generetorWords()">Gerar</button>
+    <p id="white-board"></p>
+    <script>
+        function generetorWords() {
+            let whiteBoard = document.getElementById("white-board");
+            let countWords = document.getElementById("count-words").value;
+
+            for(let i=0; i < countWords; i++) {
+                if(i>0 || whiteBoard.innerText !== "") {
+                    whiteBoard.innerText += " hey";
+                } else {
+                    whiteBoard.innerText += "hey";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
