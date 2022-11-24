@@ -19,6 +19,7 @@ newTaskButton.addEventListener("click", function() {
 
     tasksList.appendChild(liElement);
 
+    newTask.value = "";
     showOrHiddenSelectTasks();
 });
 
@@ -46,6 +47,19 @@ function showOrHiddenSelectTasks() {
 
 selectAllTasks.addEventListener("change", function(e) {
     e.preventDefault();
-    console.log(e);
-    return;
+
+    let tasks = document.querySelectorAll("span");
+    if (e.target.checked) {
+        for (const task of tasks) {
+            if(task.className !== "deactive") {
+                task.click();
+            }
+        }
+    } else {
+        for (const task of tasks) {
+            if(task.className === "deactive") {
+                task.click();
+            }
+        }
+    }
 });

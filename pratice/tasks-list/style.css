@@ -13,8 +13,6 @@ header {
     align-items: center;
 }
 
-
-
 span {
     cursor: pointer;
 }
@@ -43,4 +41,8 @@ li {
 .deactive {
     text-decoration: line-through;
     color: lightgray;
+}
+
+#select-tasks-container {
+    margin-top: 5%;
 }
