@@ -11,7 +11,7 @@
     <header>
         <h1>Flexbox!</h1>
         <form>
-            <fieldset >
+            <fieldset id="field-child">
                 <legend>Adicionar elemento filho</legend>
                 <label for="div-width">
                     <input type="text" id="div-width" placeholder="largura">
@@ -26,7 +26,10 @@
                     <input type="number" id="div-flex-grow" placeholder="grow">
                 </label>
                 <label for="flex-shrink-grow">
-                    <input type="text" id="flex-shrink" placeholder="flex-shrink">
+                    <input type="number" id="div-flex-shrink" placeholder="flex-shrink">
+                </label>
+                <label for="div-flex-basis">
+                    <input type="text" id="div-flex-basis" placeholder="flex-basis">
                 </label>
                 <label for="align-self-choice">align-self: </label>
                 <select name="align-self-choice" id="align-self-choice">
@@ -35,9 +38,9 @@
                     <option value="flex-end">flex-end</option>
                     <option value="center">center</option>
                 </select>
-                <button onclick="addDiv()">Adicionar</button>
+                <button id="add-child-button">Adicionar</button>
             </fieldset>
-            <fieldset>
+            <fieldset id="field-parent">
                 <legend>Propriedades do elemento pai</legend>
                 <label for="flex-direction-choice">flex-direction: </label>
                 <select name="flex-direction-choice" id="flex-direction-choice">
@@ -98,7 +101,7 @@
         </form>
     </header>
     <hr>
-    <section class="flex-container">
+    <section id="flex-container">
         <script src="index.js"></script>
     </section>
 </body>
