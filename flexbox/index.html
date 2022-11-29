@@ -13,28 +13,28 @@
         <form>
             <fieldset id="field-child">
                 <legend>Adicionar elemento filho</legend>
-                <label for="div-width">
+                <label for="div-width">width: 
                     <input type="text" id="div-width" placeholder="largura">
                 </label>
-                <label for="div-height">
+                <label for="div-height">height: 
                     <input type="text" id="div-height" placeholder="altura">
                 </label>
-                <label for="div-order">
+                <label for="div-order">order: 
                     <input type="number" id="div-order" placeholder="ordem">
                 </label>
-                <label for="div-flex-grow">
+                <label for="div-flex-grow">flex-grow: 
                     <input type="number" id="div-flex-grow" placeholder="grow">
                 </label>
-                <label for="flex-shrink-grow">
+                <label for="div-flex-shrink">flex-shrink: 
                     <input type="number" id="div-flex-shrink" placeholder="flex-shrink">
                 </label>
-                <label for="div-flex-basis">
+                <label for="div-flex-basis">flex-basis: 
                     <input type="text" id="div-flex-basis" placeholder="flex-basis">
                 </label>
                 <label for="align-self-choice">align-self: </label>
                 <select name="align-self-choice" id="align-self-choice">
-                    <option value="auto" selected="selected">auto</option>
-                    <option value="flex-start">flex-start</option>
+                    <option value="auto">auto</option>
+                    <option value="flex-start" selected="selected">flex-start</option>
                     <option value="flex-end">flex-end</option>
                     <option value="center">center</option>
                 </select>
@@ -81,22 +81,20 @@
                     <option value="space-between">space-between</option>
                     <option value="space-around">space-around</option>
                 </select>
-                <label for="align-content-choice">align-content: </label>
-                <select name="align-content-choice" id="align-content-choice">
-                    <option value="flex-start" selected="selected">flex-start</option>
-                    <option value="flex-end">flex-end</option>
-                    <option value="center">center</option>
-                    <option value="stretch">stretch</option>
-                    <option value="space-between">space-between</option>
-                    <option value="space-around">space-around</option>
-                </select>
-                <br>
-                <label for="row-gap-choice">row-gap:
-                    <input name="row-gap-choice" type="number">
+                <!-- <label for="row-gap-choice">row-gap:
+                    <input name="row-gap-choice" id="row-gap-choice" type="number">
                 </label>
                 <label for="column-gap-choice">column-gap: 
-                    <input name="column-gap-choice" type="number">
+                    <input name="column-gap-choice" id="column-gap-choice" type="number">
                 </label>
+                <button id="apply-parent-button">Aplicar</button> -->
+            
+                <input id="test" type="text" name="myText" value="Norway" selectBoxOptions="Canada;Denmark;Finland;Germany;Mexico;Norway;Sweden;United Kingdom;United States">
+                <script>
+                    let select = document.getElementById("test");
+                    createEditableSelect(select);
+                    // createEditableSelect(document.forms[0].myText);
+                </script>
             </fieldset>
         </form>
     </header>
