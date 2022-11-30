@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Flexbox!</h1>
+        <form>
+            <fieldset id="field-child">
+                <legend>Adicionar elemento filho</legend>
+                <label for="div-width">width: 
+                    <input type="text" id="div-width" placeholder="largura">
+                </label>
+                <label for="div-height">height: 
+                    <input type="text" id="div-height" placeholder="altura">
+                </label>
+                <label for="div-order">order: 
+                    <input type="number" id="div-order" placeholder="ordem">
+                </label>
+                <label for="div-flex-grow">flex-grow: 
+                    <input type="number" id="div-flex-grow" placeholder="grow">
+                </label>
+                <label for="div-flex-shrink">flex-shrink: 
+                    <input type="number" id="div-flex-shrink" placeholder="flex-shrink">
+                </label>
+                <label for="div-flex-basis">flex-basis: 
+                    <input type="text" id="div-flex-basis" placeholder="flex-basis">
+                </label>
+                <label for="align-self-choice">align-self: </label>
+                <select name="align-self-choice" id="align-self-choice">
+                    <option value="auto">auto</option>
+                    <option value="flex-start" selected="selected">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                </select>
+                <button id="add-child-button">Adicionar</button>
+            </fieldset>
+            <fieldset id="field-parent">
+                <legend>Propriedades do elemento pai</legend>
+                <label for="flex-direction-choice">flex-direction: </label>
+                <select name="flex-direction-choice" id="flex-direction-choice">
+                    <option value="row" selected="selected">row</option>
+                    <option value="row-reverse">row-reverse</option>
+                    <option value="column">column</option>
+                    <option value="column-reverse">column-reverse</option>
+                </select>
+                <label for="flex-wrap-choice">flex-wrap: </label>
+                <select name="flex-wrap-choice" id="flex-wrap-choice">
+                    <option value="no-wrap" selected="selected">no-wrap</option>
+                    <option value="wrap">wrap</option>
+                    <option value="wrap-reverse">wrap-reverse</option>
+                </select>
+                <label for="justify-content-choice">justify-content: </label>
+                <select name="justify-content-choice" id="justify-content-choice">
+                    <option value="flex-start" selected="selected">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                </select>
+                <label for="align-items-choice">align-items: </label>
+                <select name="align-items-choice" id="align-items-choice">
+                    <option value="flex-start" selected="selected">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="stretch">stretch</option>
+                    <option value="baseline">baseline</option>
+                </select>
+                <label for="align-content-choice">align-content: </label>
+                <select name="align-content-choice" id="align-content-choice">
+                    <option value="flex-start" selected="selected">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="stretch">stretch</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                </select>
+                <label for="column-gap-choice"> column-gap: 
+                    <input list="column-gap-choice" name="column-gap-choice" placeholder="column-gap">
+                    <datalist id="column-gap-choice">
+                        <option value="inherit">
+                        <option value="initial">
+                        <option value="normal">
+                    </datalist>
+                </label>
+                <label for="row-gap-choice"> row-gap: 
+                    <input list="row-gap-choice" name="row-gap-choice" placeholder="row-gap">
+                    <datalist id="row-gap-choice">
+                        <option value="inherit">
+                        <option value="initial">
+                        <option value="normal">
+                    </datalist>
+                </label>
+                <button id="apply-parent-button">Aplicar</button>
+            </fieldset>
+        </form>
+    </header>
+    <hr>
+    <section id="flex-container">
+        <script src="index.js"></script>
+    </section>
+</body>
+</html>
