@@ -28,6 +28,18 @@ addChieldButton.addEventListener("click", function(e) {
 
 applyParentButton.addEventListener("click", function(e) {
     e.preventDefault();
+
+    let [flexDirection, flexWrap, justifyContent, alignItems, alignContent, rowGap, columnGap] = getValuesParent();
+
+    whiteBoard.style.flexDirection = flexDirection !== "row" ? flexDirection : "row";
+    whiteBoard.style.flexWrap = flexWrap !== "no-wrap" ? flexWrap : "no-wrap";
+    whiteBoard.style.justifyContent = justifyContent !== "flex-start" ? justifyContent : "flex-start";
+    whiteBoard.style.alignItems = alignItems !== "flex-start" ? alignItems : "flex-start";
+    whiteBoard.style.alignContent = alignContent !== "flex-start" ? alignContent : "flex-start";
+    whiteBoard.style.rowGap = rowGap !== "" ? rowGap : "normal";
+    whiteBoard.style.columnGap = columnGap !== "" ? columnGap : "normal";
+
+    clearPropertiesParent();
 });
 
 function clearPropertiesChild() {
@@ -64,12 +76,12 @@ function clearPropertiesParent() {
 
 function getValuesParent() {
     let flexDirection = document.getElementById("flex-direction-choice").value;
-    let flexWrape = document.getElementById("flex-wrap-choice").value;
+    let flexWrap = document.getElementById("flex-wrap-choice").value;
     let justifyContent = document.getElementById("justify-content-choice").value;
     let alignItems = document.getElementById("align-items-choice").value;
     let alignContent = document.getElementById("align-content-choice").value;
     let rowGap = document.getElementById("row-gap-choice").value;
     let columnGap = document.getElementById("column-gap-choice").value;
 
-    return [flexDirection, flexWrape, justifyContent, alignItems, alignContent, rowGap, columnGap];
+    return [flexDirection, flexWrap, justifyContent, alignItems, alignContent, rowGap, columnGap];
 }

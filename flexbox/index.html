@@ -81,20 +81,23 @@
                     <option value="space-between">space-between</option>
                     <option value="space-around">space-around</option>
                 </select>
-                <!-- <label for="row-gap-choice">row-gap:
-                    <input name="row-gap-choice" id="row-gap-choice" type="number">
+                <label for="column-gap-choice"> column-gap: 
+                    <input list="column-gap-choice" name="column-gap-choice" placeholder="column-gap">
+                    <datalist id="column-gap-choice">
+                        <option value="inherit">
+                        <option value="initial">
+                        <option value="normal">
+                    </datalist>
                 </label>
-                <label for="column-gap-choice">column-gap: 
-                    <input name="column-gap-choice" id="column-gap-choice" type="number">
+                <label for="row-gap-choice"> row-gap: 
+                    <input list="row-gap-choice" name="row-gap-choice" placeholder="row-gap">
+                    <datalist id="row-gap-choice">
+                        <option value="inherit">
+                        <option value="initial">
+                        <option value="normal">
+                    </datalist>
                 </label>
-                <button id="apply-parent-button">Aplicar</button> -->
-            
-                <input id="test" type="text" name="myText" value="Norway" selectBoxOptions="Canada;Denmark;Finland;Germany;Mexico;Norway;Sweden;United Kingdom;United States">
-                <script>
-                    let select = document.getElementById("test");
-                    createEditableSelect(select);
-                    // createEditableSelect(document.forms[0].myText);
-                </script>
+                <button id="apply-parent-button">Aplicar</button>
             </fieldset>
         </form>
     </header>

@@ -1,4 +1,4 @@
-#field-child {
+#field-child, #field-parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -17,4 +17,7 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
