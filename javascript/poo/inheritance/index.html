@@ -31,8 +31,19 @@
             }
         }
 
-        const myJuice = new Orange(20, "green");
-        console.log(myJuice.getJuice());
+        class Apple extends Fruit{
+            static name = "maça";
+            color;
+            constructor(size, color) {
+                super(size, Apple.name);
+                this.color = color;
+            }
+        }
+
+        const myOrange = new Orange(20, "green");
+        const myApple = new Apple(10, "red");
+        console.log(myOrange.getJuice());
+        console.log(myApple.getJuice());
     </script>
 </body>
 </html>
