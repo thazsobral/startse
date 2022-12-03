@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clique f12</h2>
+    <script>
+        "use strict";
+        class Music {
+            
+            constructor(name, duration) {
+                this.name = name;
+                this.duration = duration;
+            }
+
+            static getTime(duration) {
+                const minute = Math.floor(duration / 60);
+                let second = duration % 60;
+                if(second < 10 && second > 0) {
+                    second = `0${duration%60}`;
+                } else if(second < 10) {
+                    second = "00";
+                };
+                return `${minute}:${second}`;
+            }
+
+            getDuration() {
+                return this.duration;
+            }
+        }
+
+        const m1 = new Music("Rock", 230);
+
+        let time = m1.getDuration();
+
+        console.log(time);
+        console.log(Music.getTime(m1.duration));
+    </script>
+</body>
+</html>

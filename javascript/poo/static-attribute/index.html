@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clique F12</h2>
+    <script>
+        class Movie{
+            static hours = 2;
+            constructor(name, category, time) {
+                this.name = name;
+                this.category = category;
+                this.time = time;
+            };
+
+            getAttributes() {
+                console.log(this.hours);
+                console.log(this.name);
+                console.log(this.category);
+            };
+        }
+
+        const movie1 = new Movie("Transforms", 1, Movie.hours);
+        console.log(movie1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clique F12</h2>
+    <script>
+        "use strict";
+        class Product {
+            constructor(name, value, category) {
+                this.name = name;
+                this.value = value;
+                this.category = category;
+            }
+        }
+
+        const prod1 = new Product("cadeira", 100.00, 1);
+        const prod2 = prod1;
+
+        console.log(prod1);
+        console.log(prod2);
+
+        prod2.name = "sofa";
+        prod2.category = 2;
+
+        console.log(prod1);
+        console.log(prod2);
+    </script>
+</body>
+</html>

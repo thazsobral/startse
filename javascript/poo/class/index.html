@@ -11,9 +11,11 @@
     <script>
         "use strict";
         class Movie {
-            constructor(title, year) {
+            gender;
+            constructor(title, year, gender = "romance") {
                 this.title = title;
                 this.year = year;
+                this.gender = gender;
             }
         }
 
