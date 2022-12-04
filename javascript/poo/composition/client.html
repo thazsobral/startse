@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clique F12</h2>
+    <script>
+        class Cupom {
+            static discountA = 10;
+            static discountB = 30;
+            getDesc(expenses) {
+                return expenses > 10 ? Cupom.discountB : Cupom.discountA;
+            }
+        }
+
+        class Client {
+            #name;
+            #expenses = 0;
+            #discount;
+            constructor(name) {
+                this.#name = name;
+                this.#discount = new Cupom();
+            }
+
+            get advantage() {
+                return this.#discount.getDesc(this.#expenses);
+            }
+            
+            set expenses(value) {
+                this.#expenses += value;
+            }
+        }
+
+        const c1 = new Client("Heitor");
+        c1.expenses = 1;
+        console.log(c1.advantage);
+        c1.expenses =  11;
+        console.log(c1.advantage);
+    </script>
+</body>
+</html>

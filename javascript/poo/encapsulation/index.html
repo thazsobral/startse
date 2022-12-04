@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clique F12</h2>
+    <script>
+        class Product {
+            #type;
+            #value;
+            color;
+            constructor(type, value, color) {
+                if(this.#validateValue(value)) {
+                    this.#type = type;
+                    this.#value = value;
+                    this.color = color;
+                } else {
+                    console.error("Valor incorreto!");
+                };
+            }
+            
+            #validateValue(value) {
+                if(typeof value !== "number") {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            get value() {
+                return this.#value;
+            }
+
+            get type() {
+                return this.#type;
+            }
+
+            set value(value) {
+                if(this.#validateValue(value)) {
+                    this.#value = value;
+                } else {
+                    console.error("Value incorreto!");
+                }
+            }
+        }
+
+        const p1 = new Product("cadeira",10, "blue");
+        console.log(p1.color);
+        console.log(p1.value);
+        console.log(p1.type);
+        p1.value = 20;
+        console.log(p1.value);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clique F12</h2>
+    <script>
+        class Product {
+            #name;
+            #value;
+            constructor(name, value) {
+                this.#name = name;
+                this.#value = value;
+            }
+
+            get data() {
+                return [this.#name, this.#value];
+            }
+        }
+
+        class Store {
+            #name;
+            #products = [];
+            constructor(name) {
+                this.#name = name;
+            }
+
+            addProduct(product) {
+                this.#products.push(product);
+            }
+
+            showProducts() {
+                console.log(`Produtos de ${this.#name}:\n`);
+                for(const product of this.#products) {
+                    console.log(product.data);
+                }
+            }
+        }
+
+        const p1 = new Product("livro", 10);
+        const p2 = new Product("cadeira", 20);
+        const p3 = new Product("panela", 15);
+        const l1 = new Store("Minha Loja");
+
+        l1.addProduct(p1);
+        l1.addProduct(p2);
+        l1.addProduct(p3);
+
+        l1.showProducts();
+    </script>
+</body>
+</html>
