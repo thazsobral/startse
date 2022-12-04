@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(161, 161, 250);
+    font: 11pt Tahoma;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+tr:nth-child(even), th {
+    background-color: gray;
+}

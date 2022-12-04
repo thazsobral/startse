@@ -1,0 +1,42 @@
+<!-- https://github.com/luizfelipe9627/simulador-de-financiamento -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de financiamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simaldor de financiamento com Sistema de Amortização Constante (SAC)</h1>
+    <form action="#">
+        <input type="text" name="object-value" id="object-value" placeholder="Valor do bem">
+        <input type="text" name="entry-value" id="entry-value" placeholder="Valor de entrada">
+        <input type="text" name="interest-rate" id="interest-rate" placeholder="Taxa de juros (%)">
+        <input type="text" name="deadline" id="deadline" placeholder="Prazo (em meses)">
+        <button id="btn-calculate">Calcular</button>
+        <input type="checkbox" name="grace" id="grace"> Com carência?
+        <select name="grace-list" id="grace-list" hidden>
+            <option value="2">2 meses</option>
+            <option value="3">3 meses</option>
+            <option value="4">4 meses</option>
+        </select>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Valor da Parcela</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Saldo Devedor</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
