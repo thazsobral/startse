@@ -1,5 +1,3 @@
-// "use strict";
-
 export class Installment {
     #number;
     #value;

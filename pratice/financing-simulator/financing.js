@@ -1,5 +1,3 @@
-// "use strict";
-
 import { Installment } from "./installment.js";
 
 export class Financing {
