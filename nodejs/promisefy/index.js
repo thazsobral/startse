@@ -3,7 +3,7 @@ import { promisify } from "util";
 
 const myReadFile = promisify(fs.readFile); // transforma função construida para callback em promise
 
-myReadFile("./studies.json")
+myReadFile("../common/studies.json")
     .then((data) => {
         console.log(JSON.parse(data));
         return;

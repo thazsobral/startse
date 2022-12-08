@@ -1,6 +1,6 @@
 import fs from "fs";
 
-let studies = fs.readFile("./studies.json", (err, data) => {
+let studies = fs.readFile("../common/studies.json", (err, data) => {
     if(err) {
         console.log(err);
         return;
