@@ -1,0 +1,16 @@
+{
+  "name": "callback",
+  "version": "1.0.0",
+  "description": "demonstrativo de funções de callback",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [
+    "callback",
+    "js"
+  ],
+  "author": "",
+  "license": "ISC"
+}
