@@ -1,0 +1,54 @@
+{
+    "studies": [
+        {
+            "id": 1,
+            "name": "Luna",
+            "age": 17
+        },
+        {
+            "id": 2,
+            "name": "Gustavo",
+            "age": 20
+        },
+        {
+            "id": 3,
+            "name": "Pedro",
+            "age": 18
+        },
+        {
+            "id": 4,
+            "name": "Camila",
+            "age": 21
+        },
+        {
+            "id": 5,
+            "name": "Vitor",
+            "age": 19
+        },
+        {
+            "id": 6,
+            "name": "Victoria",
+            "age": 19
+        },
+        {
+            "id": 7,
+            "name": "Julio",
+            "age": 22
+        },
+        {
+            "id": 8,
+            "name": "Juana",
+            "age": 23
+        },
+        {
+            "id": 9,
+            "name": "Fernando",
+            "age": 17
+        },
+        {
+            "id": 10,
+            "name": "Cosmo",
+            "age": 18
+        }
+    ]
+}
