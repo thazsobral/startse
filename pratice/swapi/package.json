@@ -1,0 +1,24 @@
+{
+  "name": "swapi",
+  "version": "1.0.0",
+  "description": "consumindo a api pública do star wars",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [
+    "star",
+    "wars",
+    "api",
+    "json",
+    "js",
+    "node"
+  ],
+  "author": "thalles sobral",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}

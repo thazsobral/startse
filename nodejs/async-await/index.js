@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 
 async function main() {
     console.log("hello brother");
-    const user1 = "thazsobral";
+    const user = "thazsobral";
     const api = "https://api.github.com";
 
     const response = await fetch(`${api}/users/${user}`);
