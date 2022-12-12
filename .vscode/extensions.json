@@ -1,6 +1,7 @@
 {
     "recommendations": [
-        "ritwickdey.LiveServer",
-        "donjayamanne.githistory"
+        "ritwickdey.liveserver",
+        "donjayamanne.githistory",
+        "cweijan.vscode-mysql-client2"
     ]
 }

@@ -1,0 +1,26 @@
+-- Active: 1670798182279@@127.0.0.1@3306@startse
+SELECT * 
+FROM
+    aluno
+WHERE
+    nome LIKE "%silva%";
+SELECT * 
+FROM
+    aluno
+WHERE
+    data_nascimento BETWEEN "2000-01-01" AND "2000-12-01";
+SELECT * 
+FROM
+    aluno
+WHERE
+    data_nascimento IN("2001-01-01", "2000-01-01");
+SELECT *
+FROM
+    professor p, disciplina d
+WHERE
+    d.cpf_professor = p.cpf;
+SELECT *
+FROM
+    disciplina d
+JOIN
+    professor p ON d.cpf_professor = p.cpf;

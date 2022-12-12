@@ -1,0 +1,25 @@
+# install mysql server
+
+sudo apt update
+sudo apt install mysql-server
+sudo mysql_secure_installation
+sudo mysql
+
+# create users command
+
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'Info@1234';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+
+CREATE USER 'suporte'@'%' IDENTIFIED BY 'Info@1234';
+GRANT ALL PRIVILEGES ON *.* TO 'suporte'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+CREATE DATABASE startse;
+
+# configure network
+
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf # change bind-address to 0.0.0.0
+
+# restart mysql service
+
+sudo service mysql restart
