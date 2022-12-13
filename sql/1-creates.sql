@@ -1,5 +1,3 @@
--- criando a tabela aluno
--- Active: 1670798182279@@127.0.0.1@3306@startse
 CREATE TABLE aluno (
     ra INT NOT NULL,
     nome VARCHAR (100) NOT NULL,
@@ -7,7 +5,6 @@ CREATE TABLE aluno (
 
     PRIMARY KEY(ra)
 );
-
 CREATE TABLE disciplina (
     codigo INT AUTO_INCREMENT NOT NULL,
     nome VARCHAR(100) NOT NULL,
@@ -15,7 +12,6 @@ CREATE TABLE disciplina (
 
     PRIMARY KEY(codigo)
 );
-
 CREATE TABLE aluno_disciplina (
     ra_aluno INTEGER,
     codigo_disciplina INTEGER,
@@ -27,14 +23,9 @@ CREATE TABLE aluno_disciplina (
     Foreign KEY (ra_aluno) REFERENCES aluno(ra),
     Foreign KEY (codigo_disciplina) REFERENCES disciplina(codigo)
 );
-
 CREATE TABLE professor (
     cpf CHAR(11),
     nome VARCHAR(100) NOT NULL,
 
     PRIMARY KEY(cpf)
 );
-
-ALTER TABLE disciplina ADD cpf_professor CHAR(11);
-ALTER TABLE disciplina ADD Foreign KEY (cpf_professor) REFERENCES professor(cpf);
-ALTER TABLE aluno_disciplina MODIFY ano YEAR CHECK(ano > 2000);

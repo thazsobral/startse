@@ -1,9 +1,8 @@
--- Active: 1670798182279@@127.0.0.1@3306@startse
 SELECT * 
 FROM
     aluno
 WHERE
-    nome LIKE "%silva%";
+    nome LIKE "%Silva%";
 SELECT * 
 FROM
     aluno
