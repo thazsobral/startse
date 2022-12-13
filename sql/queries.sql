@@ -24,3 +24,22 @@ FROM
     disciplina d
 JOIN
     professor p ON d.cpf_professor = p.cpf;
+SELECT *
+FROM
+    professor p
+INNER JOIN 
+    disciplina d ON d.cpf_professor = p.cpf;
+SELECT 
+    MAX(ad.nota),
+    MIN(ad.nota),
+    AVG(ad.nota),
+    SUM(ad.nota)
+FROM
+    aluno_disciplina ad
+WHERE
+    ad.codigo_disciplina = 10;
+SELECT DISTINCT
+    ad.codigo_disciplina,
+    ad.ano
+FROM
+    aluno_disciplina ad;
