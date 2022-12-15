@@ -1,4 +1,4 @@
-import { getPeople, getSW } from "./sw-service.js";
+import { getPeople, getSW } from "./services/sw-service.js";
 
 async function main() {
     const results = [];
