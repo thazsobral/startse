@@ -1,0 +1,94 @@
+@media (max-width: 630px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100vw;
+        transform: scaleX(0);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: black;
+    }
+
+    .menu:first-child {
+        border-top: 1px solid black;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid black;
+    }
+
+    label {
+        cursor: pointer;
+        border: none;
+        position: relative;
+        display: block;
+        margin-right: 5vw;
+        height: 22px;
+        width: 8vw;
+        background-color: white;
+    }
+
+    label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: black;
+        border-radius: 30px;
+        transition: .25 ease-in-out;
+    }
+
+    label span:nth-child(1) {
+        top: 0;
+        transition: .2s;
+    }
+
+    label span:nth-child(2) {
+        top: 8px;
+        transition: .0s;
+    }
+
+    label span:nth-child(3) {
+        top: 16px;
+        transition: .2s;
+    }
+
+    #menu-checkbox:checked+label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #menu-checkbox:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #menu-checkbox:checked+label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    #menu-checkbox:checked~nav .menu{
+        transform: scaleY(1);
+        transform-origin: right;
+        transition: transform .5s ease;
+    }
+
+    nav .menu a {
+        text-align: center;
+        width: 100%;
+    }
+}
