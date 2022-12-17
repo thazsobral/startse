@@ -1,0 +1,2 @@
+# finance-simulator
+Simulador de financiamento com Sistema de Amortização Constante (SAC). Este projeto pode te ajudar a prever e se preparar para suas parcelas de fincanciamento, considerando também o SAC.
