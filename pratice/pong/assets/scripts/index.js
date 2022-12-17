@@ -143,7 +143,20 @@ var game = {
         this.context.font = "50px Courier New";
         this.context.fillStyle = this.color;
 
+        this.context.fillRect(
+            this.canvas.width/2 - 350,
+            this.canvas.height/2 - 48,
+            700,
+            100
+        );
+
         this.context.fillStyle = "#ffffff";
+
+        this.context.fillText(
+            "Press any key to begin",
+            this.canvas.width/2,
+            this.canvas.height/2 + 15
+        );
     },
 };
 
