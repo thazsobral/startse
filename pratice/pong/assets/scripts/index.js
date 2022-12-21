@@ -1,5 +1,8 @@
 // based on https://github.com/gabriel-custard/pong-startse
 
+const COLOR_BLACK = "#000";
+const COLOR_WHITE = "#fff";
+
 var directions = {
 	IDLE: 0,
 	UP: 1,
@@ -30,7 +33,7 @@ var bat = {
 		return {
 			width: 18,
 			height: 70,
-			x: side === 'left' ? 150 : this.canvas.width - 150,
+			x: side === "left" ? 150 : this.canvas.width - 150,
 			y: (this.canvas.height / 2) - 35,
 			score: 0,
 			move: directions.IDLE,
@@ -41,24 +44,24 @@ var bat = {
 
 var game = {
 	initialize: function () {
-		this.canvas = document.querySelector('canvas');
-		this.context = this.canvas.getContext('2d');
+		this.canvas = document.querySelector("canvas");
+		this.context = this.canvas.getContext("2d");
 
 		this.canvas.width = screen.width;
 		this.canvas.height = screen.height;
 
-		this.canvas.style.width = (this.canvas.width - 30) + 'px';
-		this.canvas.style.height = (this.canvas.height - 20) + 'px';
+		this.canvas.style.width = "90vw";
+		this.canvas.style.height = "90vh";
 
-		this.player = bat.new.call(this, 'left');
-		this.bat = bat.new.call(this, 'right');
+		this.player = bat.new.call(this, "left");
+		this.bat = bat.new.call(this, "right");
 		this.ball = ball.new.call(this);
 
 		this.bat.speed = 8;
 		this.running = this.over = false;
 		this.turn = this.bat;
 		this.timer = this.round = 0;
-		this.color = '#000000';
+		this.color = COLOR_BLACK;
 
 		pong.menu();
 		pong.listen();
@@ -86,7 +89,7 @@ var game = {
 		);
 
 		// Coloca a cor de preenchimento verde
-		this.context.fillStyle = '#43d545';
+		this.context.fillStyle = COLOR_WHITE;
 
 		// Desenha o jogador
 		this.context.fillRect(
@@ -120,12 +123,12 @@ var game = {
 		this.context.moveTo((this.canvas.width / 2), this.canvas.height - 140);
 		this.context.lineTo((this.canvas.width / 2), 140);
 		this.context.lineWidth = 10;
-		this.context.strokeStyle = '#43d545';
+		this.context.strokeStyle = COLOR_WHITE;
 		this.context.stroke();
 
 		// Coloca a fonte padrao do jogo no centro da tela
-		this.context.font = '100px Courier New';
-		this.context.textAlign = 'center';
+		this.context.font = "100px Courier New";
+		this.context.textAlign = "center";
 
 		// Desenha o score do jogador
 		this.context.fillText(
@@ -142,17 +145,17 @@ var game = {
 		);
 
 		// Altera o tamanho da fonte do score
-		this.context.font = '30px Courier New';
+		this.context.font = "30px Courier New";
 
 		// Desenha o score vencedor
 		this.context.fillText(
-			'Round ' + (pong.round + 1),
+			"Round " + (pong.round + 1),
 			(this.canvas.width / 2),
 			35
 		);
 
 		// Altera o tamanho da fonte do score vencedor
-		this.context.font = '40px Courier';
+		this.context.font = "40px Courier";
 
 		// Desenha o numero do round atual
 		this.context.fillText(
@@ -162,16 +165,15 @@ var game = {
 		);
 	},
 
-
 	menu: function () {
 		// Desenha o estagio inicial de todos objetos do jogo
 		pong.draw();
 
 		// Altera a cor e estilo de fonte do canvas
-		this.context.font = '50px Courier New';
+		this.context.font = "50px Courier New";
 		this.context.fillStyle = this.color;
 
-		// Desenha o retangulo atras do texto 'Press any key to begin'.
+		// Desenha o retangulo atras do texto "Press any key to begin".
 		this.context.fillRect(
 			this.canvas.width / 2 - 350,
 			this.canvas.height / 2 - 48,
@@ -180,10 +182,10 @@ var game = {
 		);
 
 		// Altera a cor de preenchimento do canvas;
-		this.context.fillStyle = '#ffffff';
+		this.context.fillStyle = COLOR_WHITE;
 
-		// Desenha o texto 'press any key to begin'
-		this.context.fillText('Press any key to begin',
+		// Desenha o texto "press any key to begin"
+		this.context.fillText("Press any key to begin",
 			this.canvas.width / 2,
 			this.canvas.height / 2 + 15
 		);
@@ -191,10 +193,10 @@ var game = {
 
     endgameMenu: function (text) {
 		// Altera cor e tamanho da fonte
-		pong.context.font = '50px Courier New';
+		pong.context.font = "50px Courier New";
 		pong.context.fillStyle = this.color;
 
-		// Desenha o retangulo atras do texto 'Press any key to begin'.
+		// Desenha o retangulo atras do texto "Press any key to begin".
 		pong.context.fillRect(
 			pong.canvas.width / 2 - 350,
 			pong.canvas.height / 2 - 48,
@@ -203,9 +205,9 @@ var game = {
 		);
 
 		// Altera a cor do preenchimento da fonte;
-		pong.context.fillStyle = '#43d545';
+		pong.context.fillStyle = COLOR_WHITE;
 
-		// Desenha os textos ('game Over' e 'Winner')
+		// Desenha os textos ("game Over" e "Winner")
 		pong.context.fillText(text,
 			pong.canvas.width / 2,
 			pong.canvas.height / 2 + 15
@@ -290,7 +292,7 @@ var game = {
 			// Verifica se ha mais round para ser jogados para anunciar ou nao a vitoria do jogador
 			if (!rounds[this.round + 1]) {
 				this.over = true;
-				setTimeout(function () { pong.endgameMenu('Winner!'); }, 1000);
+				setTimeout(function () { pong.endgameMenu("Winner!"); }, 1000);
 			} else {
 				// Se ha um novo round, reseta os valores e incrementa o numero do round
 				this.player.score = this.bat.score = 0;
@@ -305,10 +307,9 @@ var game = {
 		// Verifica se o computador ganhou o round
 		else if (this.bat.score === rounds[this.round]) {
 			this.over = true;
-			setTimeout(function () { pong.endgameMenu('Game Over!'); }, 1000);
+			setTimeout(function () { pong.endgameMenu("Game Over!"); }, 1000);
 		}
 	},
-
 
 	loop: function () {
 		pong.update();
@@ -319,7 +320,7 @@ var game = {
 	},
 
 	listen: function () {
-		document.addEventListener('keydown', function (key) {
+		document.addEventListener("keydown", function (key) {
 			// Controla o input para iniciar o game
 			if (pong.running === false) {
 				pong.running = true;
@@ -334,7 +335,7 @@ var game = {
 		});
 
 		// Para o jogador de se mover quando nao ha input
-		document.addEventListener('keyup', function (key) { pong.player.move = directions.IDLE; });
+		document.addEventListener("keyup", function (key) { pong.player.move = directions.IDLE; });
 	},
 
 	// Reseta o local da bola e jogadores
@@ -350,9 +351,7 @@ var game = {
 	// Espera um tempo antes de iniciar o proximo round
 	_turnDelayIsOver: function() {
 		return ((new Date()).getTime() - this.timer >= 1000);
-	},
-
-	
+	},	
 };
 
 var pong = Object.assign({}, game);
