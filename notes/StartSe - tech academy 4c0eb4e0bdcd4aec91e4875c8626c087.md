@@ -2,13 +2,9 @@
 
 # Aprendendo a aprender
 
----
-
 [Aprendendo a aprender](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Aprendendo%20a%20aprender%206fc46fe99d434a03bc5709f0acff348f.md)
 
 # Introdução, Sistemas e Aplicações
-
----
 
 [****Introducao a programacao****](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Introducao%20a%20programacao%2066faa09ff2964002a72b26fe3c82fc42.md)
 
@@ -30,8 +26,6 @@
 
 # Linguagens de Programação
 
----
-
 [Linguagens de Programacao](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Linguagens%20de%20Programacao%2073e6a209b8644817a83ef1c0b03b301d.md)
 
 [Linguagens de Alto e Baixo Nivel](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Linguagens%20de%20Alto%20e%20Baixo%20Nivel%20d2504d4a8c82464ba31da0afc276f49b.md)
@@ -47,8 +41,6 @@
 [Logica de Programacao e Algoritmos](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Logica%20de%20Programacao%20e%20Algoritmos%20fedde94afe574623936af6e504a62cd3.md)
 
 # Aprendendo HTML e Elementos
-
----
 
 [Onde tudo comeca?](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Onde%20tudo%20comeca%207ad9f545e4584d5889eaf9b60ac0c884.md)
 
@@ -72,8 +64,6 @@
 
 # Aprendendo CSS
 
----
-
 [Entendendo o CSS](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Entendendo%20o%20CSS%2013d5717bbcce4957941f4ceb14e687fe.md)
 
 [Seletores](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Seletores%209244cd3ba48f47ac9006ca2253b1c8d0.md)
@@ -95,8 +85,6 @@
 [Background](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Background%20d9be8279378c4c759ce48e63991ab82d.md)
 
 # Elementos de Página
-
----
 
 [Regras e Media Queries](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Regras%20e%20Media%20Queries%205600e0bb169e4eceb12555b06437e943.md)
 
@@ -138,8 +126,6 @@
 
 # Introdução ao GIT
 
----
-
 [Introdução ao Git](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Introduc%CC%A7a%CC%83o%20ao%20Git%20e3e5f9513e3147abad3002afda59386d.md)
 
 [Instalação do Git](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Instalac%CC%A7a%CC%83o%20do%20Git%20b9a1b7c6e8024b9e827e1ce33b44288b.md)
@@ -178,8 +164,6 @@
 
 # JavaScript
 
----
-
 [Introducao](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Introducao%20706c1269b90a4aa2aa2fc73b0cf10691.md)
 
 [Comecando no JS](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Comecando%20no%20JS%20d4795c89a84c4c37bcf2fa02724de8c4.md)
@@ -189,8 +173,6 @@
 [Auxilio no desenvolvimento](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Auxilio%20no%20desenvolvimento%20d0783e44568a4870a9ddc51150766441.md)
 
 # HTML semântico e FlexBox
-
----
 
 [HTML Semantico - Introducao](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/HTML%20Semantico%20-%20Introducao%201461dceb49dd4554b3d719fa0a455b3a.md)
 
@@ -203,8 +185,6 @@
 [Bootstrap](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Bootstrap%20eac624d17d0340edab08cc85017e7a09.md)
 
 # Programação Orientada a Objetos
-
----
 
 [Programacao Orientada a Objetos (POO)](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Programacao%20Orientada%20a%20Objetos%20(POO)%20cb6ef0a817a14be1b4f194d3c1ce0943.md)
 
@@ -244,8 +224,6 @@
 
 # NodeJs
 
----
-
 [Back-end e Front-end](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Back-end%20e%20Front-end%2085401ee6fb1a4177858bb8b254ccdba6.md)
 
 [Instalacao do NodeJS](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Instalacao%20do%20NodeJS%207879eca0b652495c8b230afff60994a6.md)
@@ -277,8 +255,6 @@
 [Conhecendo o EJS](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Conhecendo%20o%20EJS%20e4d00211fbbe4d258964b3963b8ba176.md)
 
 # SQL
-
----
 
 [Introdução a Banco de Dados](StartSe%20-%20tech%20academy%204c0eb4e0bdcd4aec91e4875c8626c087/Introduc%CC%A7a%CC%83o%20a%20Banco%20de%20Dados%206051cb83f9b1416db20c05a602c28cff.md)
 
